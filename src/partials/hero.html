@@ -1,4 +1,4 @@
-<section>
+<section class="section hero">
   <div class="container">
     <h1>Artem Kozlov</h1>
     <p>Junior full stack developer</p>
@@ -8,24 +8,44 @@
       <li><a href="#">Eng</a></li>
     </ul>
 
-    <button type="button">
-      <svg>
+    <button class="menu-burger js-open-menu" type="button">
+      <svg width="33" height="20">
         <use href="./images/icons.svg#icon-burger"></use>
       </svg>
     </button>
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
-        <svg width="24" height="24">
+        <svg width="23" height="23">
           <use href="./images/icons.svg#icon-cross"></use>
         </svg>
       </button>
 
       <ul class="mobile-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#portfolio">Portfolio</a></li>
-        <li><a href="#cintacts">Contacts</a></li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#home">Home</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#about">About me</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#skills">Skills</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#portfolio">Portfolio</a>
+        </li>
+        <li class="mobile-menu__item">
+          <a class="mobile-menu__link" href="#cintacts">Contacts</a>
+        </li>
+      </ul>
+      <ul class="mobile-lang">
+        <li class="mobile-lang__item mobile-lang__item--after">
+          <a class="mobile-lang__link mobile-lang__link--current" href="#"
+            >Eng</a
+          >
+        </li>
+        <li class="mobile-lang__item">
+          <a class="mobile-lang__link" href="#">Ukr</a>
+        </li>
       </ul>
     </div>
     <picture

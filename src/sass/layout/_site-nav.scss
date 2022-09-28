@@ -1,0 +1,26 @@
+.site-nav__list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid var(--second-font-color);
+}
+
+.site-nav__link {
+  transition: color 250ms linear;
+
+  display: block;
+  padding-top: 35px;
+  padding-bottom: 35px;
+
+  font-weight: var(--first-font-weight);
+  font-size: var(--basic-font-size);
+  line-height: 1.22;
+
+  color: var(--second-font-color);
+
+  &:hover,
+  &:focus {
+    color: var(--first-font-color);
+  }
+}
