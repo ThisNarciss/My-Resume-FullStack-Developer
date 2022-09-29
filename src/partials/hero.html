@@ -1,18 +1,29 @@
 <section class="section hero">
-  <div class="container">
-    <h1>Artem Kozlov</h1>
-    <p>Junior full stack developer</p>
-    <p>32 years old, Ukraine, Khmelnytskyi</p>
-    <ul>
-      <li><a href="#">Ukr</a></li>
-      <li><a href="#">Eng</a></li>
-    </ul>
+  <div class="container hero__container">
+    <div class="content-container">
+      <div class="text-container">
+        <h1 class="hero__title">Artem<span>Kozlov</span></h1>
+        <p class="hero__text">
+          Junior full stack developer<br />32 years old, Ukraine, Khmelnytskyi
+        </p>
 
-    <button class="menu-burger js-open-menu" type="button">
-      <svg width="33" height="20">
-        <use href="./images/icons.svg#icon-burger"></use>
-      </svg>
-    </button>
+        <ul class="hero__list">
+          <li class="hero__item hero__item--after">
+            <a class="hero__link" href="#">Ukr</a>
+          </li>
+          <li class="hero__item">
+            <a class="hero__link hero__link--current" href="#">Eng</a>
+          </li>
+        </ul>
+      </div>
+
+      <button class="menu-burger js-open-menu" type="button">
+        <svg width="33" height="20">
+          <use href="./images/icons.svg#icon-burger"></use>
+        </svg>
+      </button>
+    </div>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg width="23" height="23">

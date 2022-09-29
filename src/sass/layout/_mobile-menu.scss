@@ -63,7 +63,7 @@
 
   display: flex;
 
-  transform: rotateZ(90deg);
+  transform: rotate(90deg);
 
   &__item {
     padding-left: 15px;
@@ -82,7 +82,7 @@
     content: '';
     position: absolute;
     bottom: 0;
-    left: 72px;
+    left: 80px;
     width: 5px;
     height: 34px;
     background-color: var(--first-font-color);
@@ -94,11 +94,33 @@
     font-weight: var(--first-font-weight);
     font-size: 34px;
     line-height: 1.24;
+    text-transform: uppercase;
+
     color: var(--second-font-color);
 
     &:hover,
     &:focus {
       color: var(--first-font-color);
     }
+  }
+}
+.menu-burger {
+  transition: color 250ms linear;
+
+  fill: currentColor;
+  color: var(--second-font-color);
+  background-color: var(--first-bgc);
+
+  &:hover,
+  &:focus {
+    color: var(--first-font-color);
+  }
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+.menu-container {
+  @media screen and (min-width: 768px) {
+    display: none;
   }
 }

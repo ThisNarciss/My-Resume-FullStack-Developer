@@ -1,0 +1,24 @@
+.about {
+  background-color: var(--second-bgc);
+}
+.about__container {
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+}
+.about__site-title {
+  margin-bottom: 20px;
+}
+.about__text {
+  max-width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+
+  font-weight: var(--second-font-weight);
+  font-size: var(--base-font-size);
+  line-height: 1.22;
+  text-align: center;
+  &:not(:last-child) {
+    margin-bottom: 25px;
+  }
+}
