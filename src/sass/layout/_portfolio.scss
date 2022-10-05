@@ -8,8 +8,7 @@
   position: relative;
   padding: 0 50px 30px;
 
-  .portrolio__img {
-    max-height: 300px;
+  .portfolio__img {
     margin: 0 auto;
   }
 }
@@ -22,24 +21,30 @@
   padding: 0;
 
   font-size: 0;
-  width: 40px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
 }
 .slick-prev {
+  transition: background-image 250ms linear;
   left: 0;
-  background-image: url('../images/point-left.svg');
+  background-image: url('../images/arrow-left2-grey.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px;
-  fill: currentColor;
-  color: red;
+  &:hover {
+    background-image: url('../images/arrow-left2-black.svg');
+  }
 }
 .slick-next {
+  transition: background-image 250ms linear;
   right: 0;
-  background-image: url('../images/point-right.svg');
+  background-image: url('../images/arrow-right2-grey.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: 25px;
+  &:hover {
+    background-image: url('../images/arrow-right2-black.svg');
+  }
 }
 .slick-dots {
   position: absolute;
@@ -52,11 +57,16 @@
   gap: 5px;
 
   button {
+    transition: opacity 250ms linear;
     font-size: 0;
-    background-color: #808080;
+    background-color: var(--second-font-color);
     border-radius: 50%;
     width: 10px;
     height: 10px;
+  }
+  button:hover,
+  button:focus {
+    opacity: 0.3;
   }
 }
 .slick-active {
