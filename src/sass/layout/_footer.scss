@@ -17,6 +17,7 @@
   line-height: 1.22;
 }
 .footer__btn {
+  display: inline-block;
   width: 100%;
   padding: 12px 0;
 
@@ -44,14 +45,17 @@
 }
 .footer__list {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  gap: 50px;
+
+  // width: 100%;
 
   margin-top: 50px;
   margin-bottom: 50px;
 
   @media screen and (min-width: 768px) {
+    justify-content: center;
+    gap: 60px;
     margin-top: 85px;
     margin-bottom: 45px;
   }
