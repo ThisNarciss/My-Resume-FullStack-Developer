@@ -8,10 +8,33 @@
   position: relative;
   padding: 0 50px 30px;
 
+  text-align: center;
+
   .portfolio__img {
     margin: 0 auto;
   }
 }
+
+.portfolio__link {
+  display: inline-block;
+
+  padding: 10px;
+
+  font-weight: var(--second-font-weight);
+  font-size: var(--basic-font-size);
+  line-height: 1.22;
+
+  color: var(--second-font-color);
+
+  transition: color 250ms linear, box-shadow 250ms linear;
+
+  &:hover,
+  &:focus {
+    color: var(--first-font-color);
+    box-shadow: inset 0px -3px 0px -1px var(--first-font-color);
+  }
+}
+
 .slick-arrow {
   position: absolute;
   top: 50%;
